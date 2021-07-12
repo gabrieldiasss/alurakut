@@ -1,11 +1,28 @@
 import { createGlobalStyle, ThemeProvider } from 'styled-components'
+import { AluraStyles } from './src/components/lib/AlurakutCommons'
 
 const GlobalStyle = createGlobalStyle`
-  body {
+
+  * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
   }
+
+  body {
+    font-family: sans-serif;
+    background-color: #d9e6f6;
+  }
+
+
+  img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  ${AluraStyles}
+  
 `
 
 const theme = {
